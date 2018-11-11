@@ -28,3 +28,8 @@ sudo apt-get install postgresql-common -y
 sudo apt-get install postgresql-9.5 libpq-dev -y
 
 sudo -u postgres createuser vmuser -s
+
+# To run the server
+# cd /home/ubuntu/GamePage/
+# bundle install
+# rails server
