@@ -1,11 +1,11 @@
-required_plugins = ["vagrant-hostsupdater", "vagrant-berkshelf"]
-required_plugins.each do |plugin|
-  unless Vagrant.has_plugin? plugin
-    puts "Installing vagrant plugin #{plugin}"
-    Vagrant::Plugin::Manager.instance.install_plugin(plugin)
-    puts "Installed vagrant plugin #{plugin}"
-  end
-end
+# required_plugins = ["vagrant-hostsupdater", "vagrant-berkshelf"]
+# required_plugins.each do |plugin|
+#   unless Vagrant.has_plugin? plugin
+#     puts "Installing vagrant plugin #{plugin}"
+#     Vagrant::Plugin::Manager.instance.install_plugin(plugin)
+#     puts "Installed vagrant plugin #{plugin}"
+#   end
+# end
 
 Vagrant.configure("2") do |config|
   config.vm.box = "ubuntu/xenial64"
