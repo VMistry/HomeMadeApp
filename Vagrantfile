@@ -9,8 +9,8 @@
 
 Vagrant.configure("2") do |config|
   config.vm.box = "ubuntu/xenial64"
-  config.vm.network("private_network", ip: "192.168.10.101")
+  config.vm.network("private_network", ip: "192.168.11.101")
   # config.hostsupdater.aliases = ["nodeapp.local"]
-  config.vm.synced_folder "../GamePage", "/home/ubuntu/GamePage"
+  config.vm.synced_folder "../", "/home/ubuntu/GamePage"
   config.vm.provision "shell", path: "environment/provision.sh", privileged: false
 end
